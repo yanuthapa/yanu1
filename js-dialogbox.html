@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Javascript Home Page</title>
+	<style type="text/css">
+		.wrapper
+		{
+			height: 95vh;
+			width: 100%;
+		}
+
+		h1
+		{
+			text-align: center;
+			margin-top: 1em;
+			margin-bottom: 1em;
+			color: #581845;
+		}
+		nav
+		{
+			background-color: #581845;
+			height: 60px;
+			display: flex;
+			justify-content: center;
+
+		}
+		nav ul
+		{
+			list-style-type: none;
+		}
+		nav ul li
+		{	
+			display: inline-block;
+			height: 60px;
+			width: 150px;
+			text-align: center;
+
+		}
+
+		nav ul li a{
+			text-decoration: none;
+			color: white;
+
+
+		}
+
+		nav ul li:hover 
+		{
+			background-color: white;
+			color:#581845 ;
+			border: 1px solid #581845;
+		}
+
+		nav ul li:hover a
+		{
+			
+			color:#581845 ;
+		}
+		.container
+		{
+			height:70vh;
+			width:100% ;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-image: url("autumn.jpg");
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+
+		.inner{
+			height:60vh;
+			width:30% ;
+			background: linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6));
+			padding: 2%;
+
+		}
+		input
+		{
+			height: 40px;
+			width: 100%;
+			margin-top: 2%;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Javascript Learning</h1>
+		<nav>
+			<ul>
+				<li>
+					<a href="#">Switch Case</a>
+				</li>
+
+				<li>
+					<a href="#">Simple calculator</a>
+				</li>
+
+				<li>
+					<a href="#">Voting System</a>
+				</li>
+				<li>
+					<a href="#">S/I Calculater</a>
+				</li>
+				<li>
+					<a href="#"> loop</a>
+				</li>
+				<li>
+					<a href="#">DOM</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="container">
+			<div class="inner">
+				<h1>Dialog Boxes</h1>
+				<form>
+					<input type="textbox" id="alert" placeholder="Enter your value">
+
+					<input type="button" class="btn1" value="Alert box" onclick="alertbox()" >
+
+					<input type="button" class="btn1" value="Prompt box" onclick="promptbox()">
+
+					<input type="button" class="btn1" value="Confirm box" onclick="Confirmbox()" >
+					<p id="del">Delete me</p>
+					<p id="res"></p>
+				</form>
+				
+			</div>
+			
+		</div>
+		
+	</div>
+
+	<script type="text/javascript">
+		function alertbox()
+		{
+			let x=document.getElementById("alert").value;
+			alert(x);
+		}
+		function promptbox()
+		{
+			let x=prompt("Enter your value");
+		}
+		function Confirmbox()
+		{
+			let x=document.getElementById("del");
+			if(confirm("do you want to delete"))
+			{
+				x.style.display="none";
+			}	
+		}
+
+
+		
+	</script>
+
+
+</body>
+</html>
