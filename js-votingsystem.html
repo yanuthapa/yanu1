@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>javascript</title>
+	<style type="text/css">
+		*
+		{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		.wrapper
+		{
+			height: 97vh;
+			width: 100%;
+			
+		}
+		h1
+		{
+			color: #581845;
+			text-align: center;
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
+		nav
+		{
+			background-color: #581845;
+			height: 60px;
+			display: flex;
+			justify-content: center;
+
+		}
+		
+		nav ul
+		{
+			list-style-type: none;
+		}
+
+		nav ul li
+		{
+			display: inline-block;
+			width: 150px;
+			text-align: center;			
+
+		}
+		nav ul li a
+		{
+			text-decoration: none;
+			color: white;
+			line-height: 60px;
+
+		}
+
+		nav ul li:hover
+		{
+			background-color: white;
+
+		}
+		nav ul li:hover a
+		{
+			color: #581845;
+		}
+
+		
+		.wrapper
+		{
+			height: 97vh;
+			width: 100%;
+			
+		}
+
+		.outerline
+		{
+			height: 500px;
+			width: 100%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.innerline
+		{
+			height: 350px
+			width: 400px;
+			background-color: beige;
+
+		}
+		input
+		{
+			height: 40px;
+			width: 100%;
+			margin-bottom:20px;
+			margin-top:20px;
+
+		}
+		.btn1
+		{
+			border: none;
+			background-color:#581845 ;
+			color: white;
+		}
+		.btn1:hover
+		{
+			background-color: #b190f3;
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Java Script Learning</h1>
+		<nav>
+			<ul>
+				<li>
+					<a href="simple-calculator.html">Simple Calculator</a>
+				</li>
+				<li>
+					<a href="js-votingsystem.html">Voting System</a>
+				</li>
+				<li>
+					<a href="js-loop.html">Loop</a>
+				</li>
+				<li>
+					<a href="dom.html">DOM</a>
+				</li>
+				<li>
+					<a href="js-switch.html">Switch Case</a>
+				</li>
+			</ul>
+		</nav>
+		<div class="outerline">
+		<div class="innerline">
+			<h2>Voting System</h2>
+			<form>
+				
+				<input type="textbox" id="age" placeholder="Enter your age">
+				
+				<input type="button" class="btn1"value="Check eligibility" onclick="eligibility()">
+
+
+			</form>
+			<p id="res"></p>
+			
+		</div>
+		
+	</div>
+		
+	</div>
+
+	
+	<script type="text/javascript">
+		function eligibility()
+		{
+			let x=document.getElementById("age").value;
+			if (x>=18)
+				{document.getElementById("res").innerHTML="Congratulation! you are eligible"}
+			else
+				{document.getElementById("res").innerHTML="sorry! you are not eligible"}
+			
+		}
+	</script>
+
+</body>
+</html>

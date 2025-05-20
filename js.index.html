@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>javascript</title>
+	<style type="text/css">
+		*
+		{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		.wrapper
+		{
+			height: 97vh;
+			width: 100%;
+			
+		}
+		h1
+		{
+			color: #581845;
+			text-align: center;
+			margin-top: 1em;
+			margin-bottom: 1em;
+		}
+		nav
+		{
+			background-color: #581845;
+			height: 60px;
+			display: flex;
+			justify-content: center;
+
+		}
+		
+		nav ul
+		{
+			list-style-type: none;
+		}
+
+		nav ul li
+		{
+			display: inline-block;
+			width: 150px;
+			text-align: center;			
+
+		}
+		nav ul li a
+		{
+			text-decoration: none;
+			color: white;
+			line-height: 60px;
+
+		}
+
+		nav ul li:hover
+		{
+			background-color: white;
+
+		}
+		nav ul li:hover a
+		{
+			color: #581845;
+		}
+
+		.container
+		{
+			height:85vh;
+			width: 100%;
+			border: 1px solid;
+			background-image: url("pic.jpg");
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			display: flex;
+			justify-content: center;
+
+
+		}
+		/*.inner
+		{
+			height: 40vh;
+			width: 30%;
+			background: linear-gradient(rgba(255, 255, 255, .6), rgba(255, 255, 255, .6));
+			margin-top: 30px;
+
+		}*/
+
+		input
+		{
+			height: 40px;
+			width: 100%;
+		}
+		.btn
+		{
+			height: 40px;
+			width: 100%;
+			margin-top: 20px;
+			border: none;
+			background-color:#581845;
+			color: white;
+		}
+		.btn:hover
+		{
+			background-color: #B97EBB;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<h1>Java Script Learning</h1>
+		<nav>
+			<ul>
+				<li>
+					<a href="dialogbox.html">Dialog Box</a>
+				</li>
+				<li>
+					<a href="Dom-manipulation.html">DOM manipulation</a>
+				</li>
+				<li>
+					<a href="calculator.html">Calculator</a>
+				</li>
+				<li>
+					<a href="js-votingsystem.html">Voting System</a>
+				</li>
+				<li>
+					<a href="js-switch.html">Switch Case</a>
+				</li>
+				<li>
+					<a href="js-loop.html">Loop</a>
+				</li>
+				<li>
+					<a href="dom.html">DOM</a>
+				</li>
+				<li>
+					<a href="Si-calculator.html">SI calculator</a>
+				</li>
+				
+			</ul>
+		</nav>
+		<div class="container">
+			<!-- <div class="inner">
+				<h1>Switch Case</h1>
+				<input type="textbox" id="num" placeholder="Enter number 1 to 3">
+
+				<input type="button" class="btn" value="submit" onclick="switchcase()">
+
+				<p id="res"></p>
+			</div> -->
+			
+		</div>
+		
+	</div>
+
+	<!-- <script type="text/javascript">
+		function switchcase() 
+		{
+			let x=parseInt(document.getElementById("num").value)
+			let y;
+			switch(x)
+			{
+				case 1:
+					y="One";
+					break;
+				case 2:
+					y="Two";
+					break;
+				case 3:
+					y="Three";
+					break;
+				default:
+					y="Invalid choice! please enter number between 1 to 3";
+					break;
+			}
+			document.getElementById("res").innerHTML=y;	
+		}
+	</script> -->
+
+</body>
+</html>
